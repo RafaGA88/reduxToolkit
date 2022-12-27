@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import PostContainer from '../components/Post/PostContanier'
+import PostContainer from '../components/PostList/PostContanier'
 
 export default function Router () {
 

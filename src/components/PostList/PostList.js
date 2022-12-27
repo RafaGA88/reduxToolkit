@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import PostItemContainer from './PostItem/PostItemContainer';
 
-export default function Post( { posts } ){
+export default function Post( { postsIds } ){
 
     return(
         <div>
-        {posts.map(post => (
-            <PostItemContainer postId={post}></PostItemContainer>
+        {postsIds.map(postId => (
+            <PostItemContainer key={postId} postId={postId}></PostItemContainer>
         ))}
       </div>
     );
