@@ -12,10 +12,10 @@ export default function PostItemContainer ({ postId }){
   return(
         <div className='Container'>
           <UserContainer userId={selectedPost.userId}/>
+          <br/>
           <PostItem post={selectedPost}/>
+          <br/>
           <CommentContainer postId={postId} />
-          <br />
-          <br />
         </div>
   );
 }

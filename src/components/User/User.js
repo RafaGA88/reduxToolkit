@@ -18,10 +18,10 @@ export default function UserItem ({ user }){
                 User
             </Button>
             <Modal isOpen={modalIsOpen} onRequestClose={onModalClick} contentLabel="Example Modal" overlayClassName="modal-overlay" className="modal-content">
-                <p><b>Name:</b> {user.name}</p>
-                <p><b>Email:</b> {user.email}</p>
-                <p><b>Phone:</b> {user.phone}</p>
-                <p><b>WebSite:</b> {user.website}</p>
+                <p><b>Name:</b> {user?.name}</p>
+                <p><b>Email:</b> {user?.email}</p>
+                <p><b>Phone:</b> {user?.phone}</p>
+                <p><b>WebSite:</b> {user?.website}</p>
             </Modal>
         </div>
     );

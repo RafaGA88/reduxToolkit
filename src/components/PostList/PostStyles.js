@@ -1,37 +1,22 @@
 import  styled  from 'styled-components';
 
-export const DivContainer = styled.div`
+export const PostStyleContainer = styled.div`
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .modal-overlay {
-    background: #ececec;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    }
+    max-width: 400px;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 10px;
 
-    .modal-content {
-    width: 90%;
-    max-width: 500px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-    }
+`;
 
-    button {
-    padding: 5px;
-    font-size: large;
-    float: right;
-    cursor: pointer;
-    }
+export const ContainerFlex = styled.div`
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 `;

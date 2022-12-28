@@ -21,8 +21,8 @@ export default function CommentItem({ comments }){
                 {comments.map(comment => (
                     <>
                         <br/>
-                        <p><b>Name:</b> {comment.name}</p>
-                        <p><b>Comment:</b> {comment.body}</p>
+                        <p><b>Name:</b> {comment?.name}</p>
+                        <p><b>Comment:</b> {comment?.body}</p>
                         <br/>
                     </>
                 ))}

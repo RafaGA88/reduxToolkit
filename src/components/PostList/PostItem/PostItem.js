@@ -1,8 +1,9 @@
 export default function PostItem({ post }){
     return(
         <div>
-            <p>Title: {post.title}</p>
-            <p>Post: {post.body}</p>
+            <p><b>Title:</b> {post.title}</p>
+            <br />
+            <p><b>Post:</b> {post.body}</p>
         </div>
     );
 

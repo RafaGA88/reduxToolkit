@@ -1,14 +1,19 @@
 import PropTypes from 'prop-types';
 import PostItemContainer from './PostItem/PostItemContainer';
+import { PostStyleContainer, ContainerFlex } from './PostStyles';
 
 export default function Post( { postsIds } ){
 
     return(
-        <div>
-        {postsIds.map(postId => (
-            <PostItemContainer key={postId} postId={postId}></PostItemContainer>
-        ))}
-      </div>
+        <ContainerFlex>
+            <div>
+                {postsIds.map(postId => (
+                    <PostStyleContainer>
+                        <PostItemContainer key={postId} postId={postId}></PostItemContainer>
+                    </PostStyleContainer>
+                ))}
+            </div>
+        </ ContainerFlex>
     );
 
 }
